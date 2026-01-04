@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deep Javiya</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scrollIt.js"></script>
+    <script src="./scroll.js"></script>
+    <style>
+        body { margin: 0; font-family: sans-serif; }
+        header { position: fixed; top: 0; width: 100%; height: 80px; background: #111; z-index: 10; }
+        header ul { display: flex; list-style: none; padding: 25px; gap: 20px; margin: 0; }
+        header a { color: #fff; text-decoration: none; cursor: pointer; }
+        header a.active { color: #00d4ff; font-weight: bold; }
+        section { height: 100vh; display: flex; align-items: center; justify-content: center; font-size: 40px; }
+        .home { background: #eee; }
+        .about { background: #ccc; }
+        .services { background: #aaa; }
+        .contact { background: #888; }
+    </style>
+</head>
+<body>
+	<a id="dynamicScrollLink" data-scroll-nav="0" style="display:none;"></a>
+	
+    <header>
+        <ul>
+            <li><a data-scroll-nav="0">Home</a></li>
+            <li><a data-scroll-nav="1">About</a></li>
+            <li><a data-scroll-nav="2">Services</a></li>
+            <li><a href="about.html?section=2">About Page</a></li>
+        </ul>
+    </header>
+
+    <section class="home" data-scroll-index="0">Home</section>
+    <section class="about" data-scroll-index="1">About</section>
+    <section class="services" data-scroll-index="2">Services</section>
+    <section class="contact" data-scroll-index="3">Contact</section>
+</body>
+</html>

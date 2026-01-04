@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./scrollIt.js"></script>
+    <script src="./scroll.js"></script>
+    <style>
+        body { font-family: sans-serif; padding-top: 50px; }
+        a { display: block; margin-bottom: 10px; color: blue; text-decoration: none; font-size: 20px; }
+        section { height: 100vh; display: flex; align-items: center; justify-content: center; font-size: 40px; }
+        .home { background: #eee; }
+        .about { background: #ccc; }
+        .services { background: #aaa; }
+        .contact { background: #888; }
+    </style>
+</head>
+<body>
+    <a id="dynamicScrollLink" data-scroll-nav="0" style="display:none;"></a>
+
+    <h1>About Page</h1>
+    <a href="index.html?section=0">Go to Home</a>
+    <a href="index.html?section=1">Go to About Section</a>
+    <a href="index.html?section=2">Go to Services Section</a>
+    <a href="index.html?section=3">Go to Contact Section</a>
+
+    <section class="home" data-scroll-index="0">Home</section>
+    <section class="about" data-scroll-index="1">About</section>
+    <section class="services" data-scroll-index="2">Services</section>
+    <section class="contact" data-scroll-index="3">Contact</section>
+</body>
+</html>
